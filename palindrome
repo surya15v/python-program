@@ -1,0 +1,14 @@
+def is_palindrome(string):
+    a=0
+    b=len(string)
+    if len(string)==0 or len(string)==1:
+        return True
+    elif string[a]==string[b-1]:
+        return is_palindrome(string[a+1:b-1])
+    else:
+        return False
+string = input()
+
+is_true =is_palindrome(string.lower())
+
+print(is_true)
